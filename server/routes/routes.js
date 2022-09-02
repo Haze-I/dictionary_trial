@@ -40,7 +40,7 @@ function addMeaning(word) {
   }
 }
 
-router.get(":word",  (req, res) => {
+router.get("/:userId/words/translations/:word",  (req, res) => {
   try {
      res.status(200).send(addMeaning(word));
   } catch (error) {
